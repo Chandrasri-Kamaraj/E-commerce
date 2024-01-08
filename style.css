@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+.navbar-links a{
+   color: #1d232c; 
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1d232c;
+}
+.toggle-navbar{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    .toggle-navbar{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header img{
+        display: none;
+    }
+    
+}
+.side-navbar{
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: -60%;
+    position: fixed;
+    padding: 20px;
+    color: black;
+    transition: 2s;
+    
+}
+.side-navbar a{
+    text-decoration: none;
+    
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+
+.header button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: white;
+}
+.service{
+    padding: 20px;
+}
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container2 div{
+    border: #1d232c;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    background-color:cadetblue;
+    color: black;
+}
+.new-arraivals{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arraivals-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arraivals button{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    padding: 10px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.news input{
+    padding: 10px;
+    width: 80vw;
+    margin-top: 10px;
+}
+.news button{
+    margin-top: 10px;
+    padding: 10px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+}
+.footer{
+    background-color: #1d232c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+border: none;
+background-color: transparent;
+width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.product-box{
+    flex-basis: 30%;
+    text-align: center;
+}
+.contact-form
+{
+    border: solid 5px red;
+    border-radius: 10px;
+    height: 80%;
+    margin: 30px;
+}
+.contact-box{
+    padding: 20px;
+    background-color: #1d232c;
+    color: white;
+
+}
+.contact-box table{
+    width: 80%;
+    height: 10%;
+}
+.contact-box input{
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 40px;
+    width: 100%;
+}
+#submit{
+     background-color:white;
+     color: black;
+}
+.contact-box tr{
+    margin-top: 20px;
+}
+@media screen and (max-width:700px) {
+    .toggle-navbar{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header img{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    
+}
+
